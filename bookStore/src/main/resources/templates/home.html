@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background: #f5f7fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333;
+      }
+
+      .navbar {
+        background: linear-gradient(90deg, #4e54c8, #8f94fb);
+      }
+
+      .navbar .nav-link, .navbar .navbar-brand {
+        color: white !important;
+        font-weight: 500;
+        transition: 0.3s ease;
+      }
+
+      .navbar .nav-link:hover {
+        color: #ffeaa7 !important;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #2d3436;
+        margin-bottom: 20px;
+      }
+
+      h6 {
+        color: #636e72;
+        font-size: 1rem;
+        max-width: 800px;
+        margin: 0 auto 30px auto;
+        line-height: 1.6;
+      }
+
+      img {
+        border-radius: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+      }
+
+      .nav-link:last-child {
+        background-color: #00b894;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-weight: 600;
+      }
+
+      .nav-link:last-child:hover {
+        background-color: #019874;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">📚 Book Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="available_books">Available Books</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="my_books">My Books</a>
+            </li>
+          </ul>
+          <div>
+            <a class="nav-link" href="book_register">+ Register Book</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container text-center my-5">
+      <h1>Welcome to the New Book Store</h1>
+      <h6>
+
+This Book Registration Website is a user-friendly web application that lets users:
+
+➕ Add new books
+
+✏️ Update/Edit existing books
+
+🗑️ Delete books
+
+⭐ Mark favorite books to create a personalized list
+      </h6>
+      <img src="/images/mahi.jpg.jpg" width="360px" alt="Book Store Image" />
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
